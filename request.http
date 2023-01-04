@@ -1,0 +1,28 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "jhon",
+    "age": "19",
+    "email": "jhon@gmail.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/63b519df8cd269471dc09ede HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/63b5c7608ec9701363e81f21 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "juan",
+    "age": "29",
+    "email": "juan@gmail.com"
+}
+
+###
+DELETE http://localhost:9000/api/users/63b51a6a8cd269471dc09ee0 HTTP/1.1
